@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Comments</title>
+  <style>
+    body {
+      background-image: url('images/car.png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8); /* Κάποιος ημιδιαφανής χρωματικός φίλτρος για ευκολία ανάγνωσης */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header {
+      text-align: center;
+    }
+
+    h1,
+    h3 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      color: #333; /* Προσθήκη χρώματος για να κάνουμε το κείμενο των labels ορατό */
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method = "post">
+    <header>
+      <h1>Write your comment</h1>
+    </header>
+
+    <h3>Post a comment, please, to improve our page</h3>
+
+    <label for="name">Name</label>
+    <input name="name" id="name" type="text" />
+
+    <label for="email">Email</label>
+    <input name="email" id="email" type="text" />
+
+    <label for="comments">Comments</label>
+    <textarea name="comments" id="comments"></textarea>
+
+    <p>
+      <input type="submit" value="Post comment" />
+    </p>
+  </form>
+
+</body>
+
+</html>
